@@ -1,6 +1,5 @@
 permalink: /:categories/:title/
 markdown: kramdown
-baseurl: '/ndoch2015'
 prose:
   media: 'images'
   rooturl: '_posts'
