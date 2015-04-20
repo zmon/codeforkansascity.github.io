@@ -1,7 +1,14 @@
  	<!-- FOOTER -->
+{% if page.is_nocd_2015 %}
+  <div class="footer">
+    <p class="pull-right">HACK KC presenters and participants are held to this <a href="{{ site.baseurl }}/hackkc-code-of-conduct">anti-harassment policy.</a></p>
+  </div>
+{% else %}
   <div class="footer">
     <p class="pull-right">Code for Kansas City | <a href=""><i class="icon-github"></i> Pull requests welcome!</a></p>
   </div>
+{% endif %}
+
 </div><!-- /.container -->
 <!-- Bootstrap core JavaScript
 ================================================== -->
