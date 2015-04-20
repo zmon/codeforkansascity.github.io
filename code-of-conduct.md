@@ -1,8 +1,8 @@
 ---
 layout: default
 ---
-Code of Conduct
----------------
+Code for Kansas City's Code of Conduct
+--------------------------------------
 The Kansas City Brigade is committed to providing a safe place for people to meet and collaborate.  
 We’re operating under <a href="https://github.com/codeforamerica/codeofconduct">Code for America’s code of conduct</a> while we write our own.  
 Please send any comments and/or suggestions to <a href="mailto:pbarham@codeforamerica.org">pbarham@codeforamerica.org</a>
@@ -57,7 +57,7 @@ If a participant engages in harassing behavior, the event organizers may take an
 from Code for America events and network activities. 
 
 If you are being harassed, notice that someone else is being harassed, or have any other concerns, 
-please contact a member of the event staff immediately. You can contact them at c4hrva-team@codeforamerica.org or (757) 613-8158. 
+please contact a member of the event staff immediately. You can contact them at pbarham@codeforamerica.org or (816) 679-8010. 
 Event staff will be happy to help participants contact hotel/venue security or local law enforcement, provide escorts, or otherwise assist those experiencing 
 harassment to feel safe for the duration of the event.
 
