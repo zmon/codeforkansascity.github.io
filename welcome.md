@@ -174,7 +174,8 @@ Often you can start getting involved before the first meeting.
   * [Easy way to quickly pick a license](http://choosealicense.com)
   * [Various Licenses and Comments About Them](https://www.gnu.org/licenses/license-list.html)
   * [How to Choose a License for Your Own Work](https://www.gnu.org/licenses/license-recommendations.html)
-  * [An introductory guide to open internet tools for civil servants](https://www.gov.uk/government/publications/digital-skills-in-the-civil-service/an-introductory-guide-to-open-internet-tools-for-civil-servants)
+
+* [An introductory guide to open internet tools for civil servants](https://www.gov.uk/government/publications/digital-skills-in-the-civil-service/an-introductory-guide-to-open-internet-tools-for-civil-servants)
 
 * Web Hosting Resources
     * Free Amazon Hosting (time limited): [http://aws.amazon.com/free/](http://aws.amazon.com/free/)
