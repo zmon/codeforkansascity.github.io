@@ -71,16 +71,16 @@ You can apply your skills and expertise to work on an existing problem or projec
 
 ## How it Works
 
-We meet weekly, usually on Monday nights at the Sprint Accelerator, to either Hack (work on projects), Yack (socialize) or Learn (hear from a speaker). 
-We use Meetup for organizing our events, so be sure to visit <a href="http://www.meetup.com/kcbrigade">meetup.com/kcbrigade</a> for the latest information. 
+We meet weekly, usually on Monday nights at the Sprint Accelerator, to either Hack (work on projects), Yack (socialize) or Learn (hear from a speaker).
+We use Meetup for organizing our events, so be sure to visit <a href="http://www.meetup.com/kcbrigade">meetup.com/kcbrigade</a> for the latest information.
 
 The format for Hack Nights:
 
-* 6:00 - Social / Introductions 
-* 6:10 - New Member Orientation 
+* 6:00 - Social / Introductions
+* 6:10 - New Member Orientation
 * 6:20 - Project Pitches
-* 6:30 - Work on projects 
-* 7:00 - Pizza arrives 
+* 6:30 - Work on projects
+* 7:00 - Pizza arrives
 * 7:45 - Wrap up - get project updates
 
 
@@ -125,7 +125,7 @@ There are also non-programming tasks in our "task list" at [http://codeforkc.org
 
 * Video of [CfA Brigade's Director inspiring at TED: Why Good Hackers Make Good Citizens](http://www.ted.com/talks/catherine_bracy_why_good_hackers_make_good_citizens)
 
-* Video of [The Typical Hack Night in Chicago]((https://www.youtube.com/watch?v=H_on0kXZ07M)
+* Video of [The Typical Hack Night in Chicago](https://www.youtube.com/watch?v=H_on0kXZ07M)
 
 
 ## Get Smart
@@ -145,7 +145,7 @@ There are also non-programming tasks in our "task list" at [http://codeforkc.org
 
 Often you can start getting involved before the first meeting.
 
-* Look at our Forum for recent topics that you are interested in and would like to reply and contribute to.  
+* Look at our Forum for recent topics that you are interested in and would like to reply and contribute to.
 
 * Look at our GitHub open source code repositories. We welcome Pull Requests (mods to our code).  [Our Github](https://github.com/c4hrva)
 
@@ -171,11 +171,10 @@ Often you can start getting involved before the first meeting.
   * [https://github.com/maxogden/art-of-node#the-art-of-node](https://github.com/maxogden/art-of-node#the-art-of-node) - Art of Node.js
 
 * Learn to License.  Since civic hacking starts with open source software and usually encompasses free software as well, you'll need to understand the myriad of software licenses out there and how to apply them to your work. We prefer and default to [MIT license](http://choosealicense.com/licenses/mit/). Some learning resource suggestions:
-  * Easy way to quickly pick a license - http://choosealicense.com
-  * [Various Licenses and Comments About Them] (https://www.gnu.org/licenses/license-list.html)
-  * [How to Choose a License for Your Own Work] (https://www.gnu.org/licenses/license-recommendations.html)
-
-* [An introductory guide to open internet tools for civil servants](https://www.gov.uk/government/publications/digital-skills-in-the-civil-service/an-introductory-guide-to-open-internet-tools-for-civil-servants)
+  * [Easy way to quickly pick a license](http://choosealicense.com)
+  * [Various Licenses and Comments About Them](https://www.gnu.org/licenses/license-list.html)
+  * [How to Choose a License for Your Own Work](https://www.gnu.org/licenses/license-recommendations.html)
+  * [An introductory guide to open internet tools for civil servants](https://www.gov.uk/government/publications/digital-skills-in-the-civil-service/an-introductory-guide-to-open-internet-tools-for-civil-servants)
 
 * Web Hosting Resources
     * Free Amazon Hosting (time limited): [http://aws.amazon.com/free/](http://aws.amazon.com/free/)
@@ -185,7 +184,7 @@ Often you can start getting involved before the first meeting.
 
 
 ## Code of Conduct
-Our (Code of Conduct)[https://github.com/code4hr/codeofconduct)
+Our [Code of Conduct](https://github.com/code4hr/codeofconduct)
 
 <h2 id="contact">Contact Us</h2>
-This sites creator was {{page.contact-name}}, but many others help to keep it awesome. You can file a issue/request in our [bug tracker]({{page.repo-issues-url}}), join our email group and discuss there, find us on twitter using @codeforkc, or just email [{{page.email-contact}}](mailto:{{page.email-contact}})
+This sites creator was {{page.contact-name}}, but many others help to keep it awesome. You can file a issue/request in our [bug tracker]({{page.repo-issues-url}}), join our email group and discuss there, find us on twitter using [@codeforkc](https://twitter.com/codeforkc), or just email [{{page.email-contact}}](mailto:{{page.email-contact}})
