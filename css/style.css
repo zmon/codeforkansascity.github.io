@@ -387,3 +387,41 @@ div.project-issues {
   color: #fff;
 }
 
+
+.hack-details * h2,
+.hack-details * dt,
+.hack-details * dd,
+.hack-details * ul,
+.hack-details * ol,
+.hack-details * li,
+.hack-details * p {
+  font-size: 21px;
+}
+
+.hack-details-red,
+.hack-details * a{
+  color: #ff0029;
+}
+
+.hack-details-blue {
+  color: #00c9ed;
+}
+
+.hack-details * dt {
+  font-weight: normal;
+}
+
+.hack-details * dd {
+  font-weight: bolder;
+}
+
+.ndoch-2015-img {
+  height: 500px;
+  background-size: cover;
+  background-position: center bottom;
+  margin-bottom: 60px;
+  color: #fff;
+}
+
+
+

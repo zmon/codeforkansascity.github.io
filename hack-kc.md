@@ -1,4 +1,11 @@
-# June 6th to 7th
+---
+layout: default
+title: HACK KANSAS CITY - 2015
+excerpt: Hack, Learn, Make Something Good #HACKKC
+is_nocd_2015: true
+---
+
+# June 6th to 7th 
 
 Join local designers, developers, doers and
 thinkers with a passion for making local government work better
