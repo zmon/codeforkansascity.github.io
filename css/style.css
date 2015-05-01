@@ -372,11 +372,11 @@ div.project-issues {
 }
 
 .ndoca-2015 * dt {
-  font-weight: normal;
+  font-weight: bolder;
 }
 
 .ndoca-2015 * dd {
-  font-weight: bolder;
+  font-weight: normal;
 }
 
 .ndoch-2015-img {
@@ -389,6 +389,7 @@ div.project-issues {
 
 
 .hack-details * h2,
+.hack-details * dl,
 .hack-details * dt,
 .hack-details * dd,
 .hack-details * ul,
@@ -408,11 +409,12 @@ div.project-issues {
 }
 
 .hack-details * dt {
-  font-weight: normal;
+  font-weight: bolder;
 }
 
 .hack-details * dd {
-  font-weight: bolder;
+  font-weight: normal;
+  padding-left: 60px;
 }
 
 .ndoch-2015-img {
