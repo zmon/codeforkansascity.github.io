@@ -423,5 +423,20 @@ div.project-issues {
   color: #fff;
 }
 
+/* Make image responsive http://stackoverflow.com/questions/18903183/how-to-create-a-responsive-image-in-twitter-bootstrap-3
+
+ */
+.hack-details-image-wrapper {
+  float: left;
+  clear: left;
+  display: table;
+  table-layout: fixed;
+}
+
+img.img-responsive {
+  display: table-cell;
+  max-width: 100%;
+}
+
 
 
