@@ -440,5 +440,10 @@ img.img-responsive {
   max-width: 100%;
 }
 
+.logos img {
+  margin: 20px;
+  float: left;
+}
+
 
 
