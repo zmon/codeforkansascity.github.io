@@ -434,6 +434,11 @@ div.project-issues {
   display: table;
   table-layout: fixed;
 }
+.hack-details-image-wrapper-right {
+  float: right;
+  display: table;
+  table-layout: fixed;
+}
 
 img.img-responsive {
   display: table-cell;
