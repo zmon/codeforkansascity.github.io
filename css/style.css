@@ -449,6 +449,8 @@ img.img-responsive {
   margin: 20px;
   float: left;
 }
-
-
+/* Hack KC styles */
+dt {
+	margin-top:2%;
+}
 
