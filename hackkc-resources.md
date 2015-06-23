@@ -6,6 +6,11 @@ is_nocd_2015: true
 ---
 # Resource Page
 
+## Brigade
+
+* [GitHub](https://github.com/codeforkansascity) for Kansas City, where all of our projects live.
+* [Slack](https://codeforkc.slack.com) email pbarham@codeforamerica.org to get an invite.
+
 ## Design
 
 This is a good article on how someone developed an app. There is no right way to build a application, so read it as a general guide. The article [http://mobile.smashingmagazine.com/2013/07/04/top-ten-app-part-1-idea-and-design?utm_source=buffer&utm_campaign=Buffer&utm_content=buffera3257&utm_medium=twitter](http://mobile.smashingmagazine.com/2013/07/04/top-ten-app-part-1-idea-and-design?utm_source=buffer&utm_campaign=Buffer&utm_content=buffera3257&utm_medium=twitter)
@@ -23,4 +28,9 @@ Milestones, Labels & Assignees
 Notifications, @mentions, and references
 Overviews & Reports
 Other uses for Issues
+
+## Design
+
+This is a good article on how someone developed an app. There is no right way to build a application, so read it as a general guide. The article [http://mobile.smashingmagazine.com/2013/07/04/top-ten-app-part-1-idea-and-design?utm_source=buffer&utm_campaign=Buffer&utm_content=buffera3257&utm_medium=twitter](http://mobile.smashingmagazine.com/2013/07/04/top-ten-app-part-1-idea-and-design?utm_source=buffer&utm_campaign=Buffer&utm_content=buffera3257&utm_medium=twitter)
+
 
