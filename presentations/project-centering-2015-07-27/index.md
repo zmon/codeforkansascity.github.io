@@ -25,15 +25,56 @@ November launch, and so forth.
 
 # Github best practices: 
 
-## 
+## Inital Paragraph
+
+This is seen in many places, and you can include a link to something live!
+
+![Good](images/github-intro-para.png)
 
 ## Readme
 
-## Changelog
+* What is the project why would someone else care to use the application, or help improve the application.  
+  OK this is marketing...
+* An example of code or screen shot of an app
+* What are the requirements
+  Think more than coding and technology.  What data would someone
+  need to have to implement this project.  What other skills besides
+  installing the software on a server are needed.  For example
+  implementing a 211 system would require good skills organizing and
+  leadership to ingage other organizations that have the data and
+  already have working applications.
+* Install/implementation instructions, if long put in INSTALL.md
+* How to contribute
+* RoadMap, again if long put in the Wiki
+
+## INSTALL.md
+If the install instructions are over a few lines in the README, you might consider breaking them out into their own files.
+
+## CHANGELOG.md
+It is a good idea to keep a changelog. http://keepachangelog.com (is a project on GitHub). 
+
+* See <https://github.com/cfpb/qu> and <https://github.com/cfpb/hmda-explorer>
+* Some Inspiration: <http://keepachangelog.com/>
+
+
+## Contributing
+
+From [https://github.com/codeforkansascity/bizfriendly-web](https://github.com/codeforkansascity/bizfriendly-web)
+
+Can include
+
+* Development Setup
+* Technology Patterns
+
+![Good](images/github-contributing.png)
+
 
 ## Issues
 
-# Team roles
+![Good labeling](images/github-issues.png)
+
+![Label list](images/github-issue-lables.png)
+
 
 # Re-engaging members & communication
 
@@ -80,15 +121,4 @@ From http://ben.balter.com/2014/11/06/rules-of-communicating-at-github/
 * Issues are constructive criticism
 
 
-# Github best practices: 
-
-## 
-
-## Readme
-
-## Changelog
-
-## Issues
-
-# User research (if there's time)
 
