@@ -24,11 +24,7 @@ On a card for each, write down
 
 ## In this workshop, we'll cover...
 
-1. Github Best Practices
-..* Initial paragraph
-..* Readme
-..* INSTALL.md
-..* CHANGELOG.md
+1. Github Best Practices: Initial paragraph, Readme, Install.md, Changelog.md
 
 2. Contributing/Issues
 
