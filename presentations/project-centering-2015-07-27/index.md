@@ -36,6 +36,8 @@ On a card for each, write down
 
 This is seen in many places, and you can include a link to something live!
 
+This example might be a bit to long, but is still good.
+
 ![Good](images/github-intro-para.png)
 
 ## Readme
@@ -51,7 +53,14 @@ This is seen in many places, and you can include a link to something live!
   already have working applications.
 * Install/implementation instructions, if long put in INSTALL.md
 * How to contribute
+* Can include
+  * Development Setup
+  * Technology Patterns
+
 * RoadMap, again if long put in the Wiki
+
+
+![Good](images/github-roadmap.png)
 
 ## INSTALL.md
 If the install instructions are over a few lines in the README, you might consider breaking them out into their own files.
@@ -65,6 +74,9 @@ It is a good idea to keep a changelog. According to Wikipedia, a changelog is a 
 
 #2. Issues & Contributing 
 
+![Good](images/github-contributing.png)
+From [https://github.com/codeforkansascity/bizfriendly-web](https://github.com/codeforkansascity/bizfriendly-web)
+
 ## GitHub Issues
 
 Have a question? Open an issue. Have an idea? Open an issue. Notice
@@ -75,20 +87,18 @@ points of view, and most importantly, create permanent, searchable,
 and linkable records of internal discussions, even if the answer
 ultimately landed on is “wontfix”.
 
+* Search before you open an issue
+* Provide context
+* Issues are constructive criticism
+
 From http://ben.balter.com/2014/11/06/rules-of-communicating-at-github/
 
-From [https://github.com/codeforkansascity/bizfriendly-web](https://github.com/codeforkansascity/bizfriendly-web)
-
-Can include
-
-* Development Setup
-* Technology Patterns
-
-![Good](images/github-contributing.png)
 
 ![Good labeling](images/github-issues.png)
 
 ![Label list](images/github-issue-lables.png)
+
+
 
 
 #3. Re-engaging members & communication
@@ -120,10 +130,8 @@ From http://ben.balter.com/2014/11/06/rules-of-communicating-at-github/
 * discussion/sanity chek of ideas before they become issues or items on the Wiki
 
 
+![Good](images/slack.png)
 
-* Search before you open an issue
-* Provide context
-* Issues are constructive criticism
 
 
 
