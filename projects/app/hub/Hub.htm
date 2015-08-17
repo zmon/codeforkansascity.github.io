@@ -1,0 +1,59 @@
+<div class="OK-hub-wrapper">
+
+    <div class="container-fluid">
+            <div class="row">   
+            <div class="col-xs-12 OK-banner">
+            <span class="OK-banner-message">select a project to work on</span>
+            <span class="pull-right"><span class="OK-banner-message">or</span> 
+            <a href="https://docs.google.com/forms/d/1H62GmD35j1kwHYcX7r8jT8Gwj3dm8d-SZBVV_H9oz9s/viewform"><span class="glyphicon glyphicon-plus-sign"></span> add your civic idea to code</a></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- main content -->    
+    <div ng-controller="HubController" class="container-fluid">
+        <div class="row">
+            <!-- project card template  -->
+            <div class="col-xs-12 col-sm-6 col-md-4" ng-repeat="project in cards.projects track by $index">
+                <article class="OK-project clearfix"> 
+                    <div ng-include="'app/project/preview.html'"></div>
+                    <div ng-include="'app/project/description.html'"></div>
+                    <div ng-include="'app/project/socialbadges.html'"></div>
+                    <div ng-include="'app/project/techandhelp.html'"></div>
+                    <!-- project on hold banner (hidden for active projects ->
+                            <p class="OK-project-onhold-message">
+                                On Hold<br/>
+                                Reason: to demonstrate On Hold message
+                            </p-->
+                    <div ng-include="'app/project/contributors.html'"></div>
+                </article>
+            </div>
+        </div>
+        <div class="row">
+            <!-- idea card-->
+            <div class="col-xs-12 col-sm-6 col-md-4" ng-repeat="project in cards.ideas track by $index" >
+                <article class="OK-project idea clearfix">
+                    <div ng-include="'app/project/preview.html'"></div>
+                    
+                    <!-- project description -->           
+                    <section class="OK-project-description">
+                        <!-- idea title -->
+                        <h4>{{project.title}}<br/>
+                                <small>{{project.subtitle}}</small>
+                        </h4>
+                        <!-- idea civic category .bg-civic or .bg-CfA -->
+                        <p class="OK-project-category OK-tag bg-civic">{{project.category}}</p>
+                        <!-- project goals -->
+                        <p class="OK-project-goals">{{project.goals}}</p>
+                        <p class="OK-link-view-project"><a href="#/ideas/{{project.id}}">view idea details</a></p>
+                        <p class="small">Suggested by: {{project.suggester}}</p>   
+                    </section>                    
+                </article>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
