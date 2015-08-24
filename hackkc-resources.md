@@ -6,6 +6,10 @@ is_nocd_2015: true
 ---
 # Resource Page
 
+## New Member Handout
+
+* [New member handout](https://docs.google.com/document/d/1R0P7CrLggFGHeZBC1k_g_l7qVO9fP2hNM_vkVR-3zII/edit?usp=sharing)
+
 ## Brigade
 
 * [GitHub](https://github.com/codeforkansascity) for Kansas City, where all of our projects live.
