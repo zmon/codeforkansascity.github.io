@@ -13,7 +13,7 @@ is_nocd_2015: true
 ## Brigade
 
 * [GitHub](https://github.com/codeforkansascity) for Kansas City, where all of our projects live.
-* [Slack](https://codeforkc.slack.com) email pbarham@codeforamerica.org to get an invite.
+* [Slack](slackinvite.me/to/codeforkc) to sign up.  Slack is our online chat and history.
 
 ## Design
 
