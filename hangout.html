@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>Hangout button Demo: Async load</title>
+    <link rel="canonical" href="http://www.example.com" />
+    <script src="https://apis.google.com/js/platform.js" async defer>
+    </script>
+  </head>
+  <body>
+    <g:hangout render="createhangout"
+        invites="[
+          { id : 'bgw4g5@mail.umkc.edu ', invite_type : 'EMAIL' }
+          { id :  'paulb@savagesoft.com', invite_type : 'EMAIL' }
+        ]"
+        hangout_type="party"
+        topic="Saturday at FEC.">
+    </g:hangout>
+
+  </body>
+</html>
