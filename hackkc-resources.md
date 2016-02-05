@@ -12,8 +12,12 @@ is_nocd_2015: true
 
 ## Brigade
 
+* [Get Meeting Announcements](http://www.meetup.com/KCBrigade/) on Meetup, at [http://www.meetup.com/KCBrigade/](http://www.meetup.com/KCBrigade/)
+* **Current Projects** are on our web site at [http://codeforkc.org/](http://codeforkc.org/)
 * [GitHub](https://github.com/codeforkansascity) for Kansas City, where all of our projects live.
-* [Slack](slackinvite.me/to/codeforkc) to sign up.  Slack is our online chat and history.
+  * To look at the full project list, head over to [https://github.com/codeforkansascity](https://github.com/codeforkansascity)
+  * If you want to comment or follow projects, [Sign up](https://github.com/join)  for a FREE GitHub account at [https://github.com/join](https://github.com/join)
+* [Slack](http://slackinvite.me/to/codeforkc) to sign up.  Slack is our online chat and history.
 
 ## Design
 
@@ -23,8 +27,8 @@ This is a good article on how someone developed an app. There is no right way to
 
 ## Data
 
-* [List of datasets and locations](https://github.com/codeforkansascity/kc-open-data-library/wiki/List-of-datasets-and-locations) 
-  in the kc-open-data-library project.
+* [List of datasets and locations](https://github.com/codeforkansascity/kc-open-data-library)
+  in the kc-open-data-library project.  See the Wiki page for full details.
 * open-data-sources Slack chanel has many comments on data.
  
 ## GitHub
