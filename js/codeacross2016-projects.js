@@ -31,20 +31,48 @@ Tabletop.init({                                             // Requires js/table
     key: '1TaOFP1iQee6hIQ9A0bjZ6pVI937UK-5SMjVfIbuz2oc',
     callback: function (data, tabletop) {
         console.dir(data);
-        data.sort(function(a, b) {
-            if ( a >= b) {
-                return 1;
+        data.sort(function (a, b) {
+            console.log(a);
+            if (a['Type'] == b['Type']) {
+                if (a['Project Name'] < b['Project Name']) {
+                    return -1;
+                } else {
+                    if (a['Project Name'] > b['Project Name']) {
+                        return 1;
+                    } else {
+                        return 0;
+                    }
+                }
             } else {
-                return 0;
+                if (a['Type'] < b['Type']) {
+                    return -1;
+                } else {
+                    return 1;
+                }
             }
         });
         for (var i in data) {
-            if ( data[i]['Display'] == 'No' ) continue;
+            if (data[i]['Display'] == 'No') continue;
             var row = '';
             row += '<tr>';
             row += '<td>' + data[i]['Type'] + '</td>';
-            row += '<td><p class="project-list-norm"><b>' + data[i]['Project Name'] + '</b>: ';
-            row += data[i]['Description'] + '</p></td>';
+            row += '<td><p class="project-list-norm"><b>' + data[i]['Project Name'] + '</b>:</p> ';
+            row += marked(data[i]['Description']) ;
+
+            if ( data[i]['Resources Needed'] != '' ) {
+                row += '<div style="padding-left: 20px"><b>Resources Needed:</b><br>' + marked(data[i]['Resources Needed']) + '</div>';
+            }
+
+            if ( data[i]['Notes'] != '' ) {
+                row += '<div style="padding-left: 20px"><b>Notes:</b><br>' + marked(data[i]['Notes']) + '</div>';
+            }
+
+            if ( data[i]['News'] != '' ) {
+                row += '<div style="padding-left: 20px"><b>News:</b><br>' + marked(data[i]['News']) + '</div>';
+            }
+
+            row += '</td>';
+
             row += '<td>' + data[i]['Primary Contact'] + '</td>';
             row += '</tr>';
 
