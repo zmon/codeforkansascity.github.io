@@ -353,6 +353,11 @@ p.project-list {
   padding-left: 5em;
 }
 
+p.project-list-norm {
+  text-indent: -5em;
+  padding-left: 5em;
+}
+
 div.index-content {
   float: left;
   clear:left;

@@ -31,12 +31,20 @@ Tabletop.init({                                             // Requires js/table
     key: '1TaOFP1iQee6hIQ9A0bjZ6pVI937UK-5SMjVfIbuz2oc',
     callback: function (data, tabletop) {
         console.dir(data);
+        data.sort(function(a, b) {
+            if ( a >= b) {
+                return 1;
+            } else {
+                return 0;
+            }
+        });
         for (var i in data) {
+            if ( data[i]['Display'] == 'No' ) continue;
             var row = '';
             row += '<tr>';
             row += '<td>' + data[i]['Type'] + '</td>';
-            row += '<td>' + data[i]['Project Name'] + '</td>';
-            row += '<td>' + data[i]['Description'] + '</td>';
+            row += '<td><p class="project-list-norm"><b>' + data[i]['Project Name'] + '</b>: ';
+            row += data[i]['Description'] + '</p></td>';
             row += '<td>' + data[i]['Primary Contact'] + '</td>';
             row += '</tr>';
 
@@ -45,7 +53,7 @@ Tabletop.init({                                             // Requires js/table
 
         }
     },
-    orderby: 'Type of Entity',
+    orderby: 'Type ',
     simpleSheet: true
 });
 
