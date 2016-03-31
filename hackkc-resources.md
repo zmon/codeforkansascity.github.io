@@ -19,11 +19,25 @@ is_nocd_2015: true
   * If you want to comment or follow projects, [Sign up](https://github.com/join)  for a FREE GitHub account at [https://github.com/join](https://github.com/join)
 * [Slack](http://slackinvite.me/to/codeforkc) to sign up.  Slack is our online chat and history.
 
+## Definition
+
+Project canvas have been used to help define projects. 
+
+1. The Austin Brigade created the [Civi Tech Project Planning Canvas](https://github.com/codeforkansascity/CodeAcross2015/files/138322/project_canvas_v4-FINAL.1.pdf).  
+
+2. See the issue [Project Canvas - Create one for Health Related Projects](https://github.com/codeforkansascity/CodeAcross2015/issues/25) it has the text from the Austin Brigade's canvase as well as a Lean Canvas that is created by [HackShop](https://hackshop.waffle.io/)
+
+3. [Canvanizer](https://canvanizer.com/) allows you to create canvas from online templates.
+
+
+
 ## Design
 
 This is a good article on how someone developed an app. There is no right way to build a application, so read it as a general guide. The article [http://mobile.smashingmagazine.com/2013/07/04/top-ten-app-part-1-idea-and-design?utm_source=buffer&utm_campaign=Buffer&utm_content=buffera3257&utm_medium=twitter](http://mobile.smashingmagazine.com/2013/07/04/top-ten-app-part-1-idea-and-design?utm_source=buffer&utm_campaign=Buffer&utm_content=buffera3257&utm_medium=twitter)
 
 [Design Principles](https://www.gov.uk/design-principles) is excelant like all work from GOV.UK Digial Service.  They cover Start with needs, Design with Data, Do the hard work to make it simple, Build digital services, not websites, and Be consistent, not uniform.
+
+
 
 ## Data
 
