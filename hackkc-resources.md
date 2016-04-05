@@ -52,6 +52,13 @@ Milestones, Labels & Assignees
 Notifications, @mentions, and references
 Overviews & Reports
 Other uses for Issues
+* Markdown Basics [https://help.github.com/articles/markdown-basics/](https://help.github.com/articles/markdown-basics/)
+* Mastering Markdown [https://guides.github.com/features/mastering-markdown/](https://guides.github.com/features/mastering-markdown)
+* Deep dive Mastering Issues [https://guides.github.com/features/issues/](https://guides.github.com/features/issues/) 
+* Pro Git [https://git-scm.com/doc](https://git-scm.com/doc)
+* [Waffle.io](https://waffle.io) 
+* [Hackshop](http://hackshop.waffle.io) to create a project/repository with an initial board.
+
 
 ## Deployment
 
