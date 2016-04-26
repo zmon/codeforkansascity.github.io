@@ -19,11 +19,25 @@ is_nocd_2015: true
   * If you want to comment or follow projects, [Sign up](https://github.com/join)  for a FREE GitHub account at [https://github.com/join](https://github.com/join)
 * [Slack](http://slackinvite.me/to/codeforkc) to sign up.  Slack is our online chat and history.
 
+## Definition
+
+Project canvas have been used to help define projects. 
+
+1. The Austin Brigade created the [Civi Tech Project Planning Canvas](https://github.com/codeforkansascity/CodeAcross2015/files/138322/project_canvas_v4-FINAL.1.pdf).  
+
+2. See the issue [Project Canvas - Create one for Health Related Projects](https://github.com/codeforkansascity/CodeAcross2015/issues/25) it has the text from the Austin Brigade's canvase as well as a Lean Canvas that is created by [HackShop](https://hackshop.waffle.io/)
+
+3. [Canvanizer](https://canvanizer.com/) allows you to create canvas from online templates.
+
+
+
 ## Design
 
 This is a good article on how someone developed an app. There is no right way to build a application, so read it as a general guide. The article [http://mobile.smashingmagazine.com/2013/07/04/top-ten-app-part-1-idea-and-design?utm_source=buffer&utm_campaign=Buffer&utm_content=buffera3257&utm_medium=twitter](http://mobile.smashingmagazine.com/2013/07/04/top-ten-app-part-1-idea-and-design?utm_source=buffer&utm_campaign=Buffer&utm_content=buffera3257&utm_medium=twitter)
 
 [Design Principles](https://www.gov.uk/design-principles) is excelant like all work from GOV.UK Digial Service.  They cover Start with needs, Design with Data, Do the hard work to make it simple, Build digital services, not websites, and Be consistent, not uniform.
+
+
 
 ## Data
 
@@ -38,6 +52,13 @@ Milestones, Labels & Assignees
 Notifications, @mentions, and references
 Overviews & Reports
 Other uses for Issues
+* Markdown Basics [https://help.github.com/articles/markdown-basics/](https://help.github.com/articles/markdown-basics/)
+* Mastering Markdown [https://guides.github.com/features/mastering-markdown/](https://guides.github.com/features/mastering-markdown)
+* Deep dive Mastering Issues [https://guides.github.com/features/issues/](https://guides.github.com/features/issues/) 
+* Pro Git [https://git-scm.com/doc](https://git-scm.com/doc)
+* [Waffle.io](https://waffle.io) 
+* [Hackshop](http://hackshop.waffle.io) to create a project/repository with an initial board.
+
 
 ## Deployment
 
