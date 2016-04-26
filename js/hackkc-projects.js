@@ -30,30 +30,30 @@ function createCORSRequest(method, url) {
 Tabletop.init({                                             // Requires js/tabletop.js
     key: '1Dvb4LRZuFkghcQl50R_fSCjkFPoJSLVe8NXiyJyIy40',
     callback: function (data, tabletop) {
-        console.dir(data);
+
+        var converter = new showdown.Converter();
         for (var i in data) {
             var row = '';
 
-row += '        <div class="col-sm-3 col-md-6">';
-row += '            <div class="card">';
-row += '                <div class="card-header">';
-row += '                    <a href="#"><span style="text-align: center;"';
-row += '                                                            class="card-title">' + data[i]['title'] + '</span></a>';
-row += '                </div>';
-row += '                <div style="background-color: #fff; padding-top: 4px;" class="card-content">';
-            row += '                    <p>' + data[i]['Short Desciption'] + '</p>';
-            row += '                    <p>' + data[i]['Team'] + '</p>';
-            row += '                    <p>' + data[i]['Needs'] + '</p>';
+            row += '        <div class="col-sm-3 col-md-6">';
+            row += '            <div class="card">';
+            row += '                <div class="card-header">';
+            row += '                    <a href="#"><span style="text-align: center;"';
+            row += '                                                            class="card-title">' + data[i]['Title'] + '</span></a>';
+            row += '                </div>';
+            row += '                <div style="background-color: #fff; padding-top: 4px;" class="card-content">';
+            row += '                    <p>' + converter.makeHtml(data[i]['Short Desciption']) + '</p>';
+       //     row += '                    <p>Team: ' + converter.makeHtml(data[i]['Team']) + '</p>';
+       //     row += '                    <p>Needs:' + converter.makeHtml(data[i]['Needs']) + '</p>';
 
-row += '                </div>';
-row += '';
-row += '';
-row += '                <div style="background-color: #fff" class="card-action">';
-row += '                    &nbsp;';
-row += '                </div>';
-row += '            </div>';
-row += '        </div>';
-
+            row += '                </div>';
+            row += '';
+            row += '';
+            row += '                <div style="background-color: #fff" class="card-action">';
+            row += '                    &nbsp;';
+            row += '                </div>';
+            row += '            </div>';
+            row += '        </div>';
 
 
             $('#projects').append(row);
