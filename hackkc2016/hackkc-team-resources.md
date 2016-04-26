@@ -7,4 +7,4 @@ is_nocd_2015: true
 # Hack KC Resources
 
 ## Data
-* See our [list of datasets and locations](https://github.com/codeforkansascity/kc-open-data-library/wiki) and feel free to update
+* See our [list of datasets and locations](https://github.com/codeforkansascity/kc-open-data-library/wiki/List-of-datasets-and-locations) and feel free to update

@@ -1,8 +1,11 @@
 ---
 layout: default
-title: HACK KANSAS CITY - 2015
+title: HACK KANSAS CITY - 2016
 excerpt: Hack, Learn, Make Something Good #HACKKC
 is_nocd_2015: true
+custom_js:
+- tabletop
+- hackkc-projects
 ---
 <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDQNzkJUiUJBqI_pex-Xe9_1JD4sf2KZS8&sensor=false&extension=.js'></script>
 
@@ -100,13 +103,100 @@ is_nocd_2015: true
     }
 </style>
 
+<style>
+    .card {
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    }
+
+    .card {
+        margin-top: 10px;
+        box-sizing: border-box;
+        border-radius: 2px;
+        background-clip: padding-box;
+        background-color: #1b5e20;
+        color: #ffe598;
+    }
+
+    .card span.card-title {
+        color: #ffe598;
+        font-size: 18px;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+
+    .card .card-image {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .card .card-image img {
+        border-radius: 2px 2px 0 0;
+        background-clip: padding-box;
+        position: relative;
+        z-index: -1;
+    }
+
+    .card .card-image span.card-title {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 16px;
+    }
+
+    .card .card-header {
+        padding: 16px;
+        border-radius: 0 0 2px 2px;
+        background-clip: padding-box;
+        box-sizing: border-box;
+        position: relative;
+        bottom: 0;
+        left: 0;
+    }
+
+    .card .card-content {
+        padding: 0 16px 16px 16px;
+        border-radius: 0 0 2px 2px;
+        background-clip: padding-box;
+        box-sizing: border-box;
+        backgroun-color: #000;
+        color: #111;
+        padding-top: 4px;
+        min-height: 200px;
+    }
+
+    .card .card-content p {
+        margin: 0;
+        color: inherit;
+    }
+
+    .card .card-content span.card-title {
+        line-height: 48px;
+    }
+
+    .card .card-action {
+        border-top: 1px solid rgba(160, 160, 160, 0.2);
+        padding: 16px;
+    }
+
+    .card .card-action a {
+        color: #ffab40;
+        margin-right: 16px;
+        transition: color 0.3s ease;
+        text-transform: uppercase;
+    }
+
+    .card .card-action a:hover {
+        color: #ffd8a6;
+        text-decoration: none;
+        background-color: #fff;
+    }
+</style>
+
 <div class="container">
     <div class="row ">
-        <div class="col-lg-3">
-        </div>
         <div class="col-lg-6 hack-details-image-wrapper">
             <img class="img-responsive"
-                 src="http://www.kcdigitaldrive.org/wp-content/uploads/2015/04/hackkclogowithhash.png" width="700"/>
+                 src="{{ site.baseurl }}/images/hackkclogowithhash.png" width="700"/>
 
             <p style="font-size: 20pt">Join local designers, developers, doers and
                 thinkers with a passion for making local government work better
@@ -114,10 +204,49 @@ is_nocd_2015: true
         </div>
 
 
-        <div class="col-lg-3">
+        <div class="col-lg-1">
+        </div>
+        <div class="col-lg-5">
+
+            <!--            <div><img src="/images/umkc-law-location.jpeg"> -->
+
+            <p style="font-size: 16pt">
+                <b>UMKC School of Law</b><br>
+                500 East 52nd Street <br>
+                Kansas City,
+                MO 64110<br>
+            </p>
+
+            <div style="display: inline-block; " id='umkc-map'></div>
         </div>
     </div>
 </div>
+
+<div class="container ">
+    <div class="row " style="margin-top: 30px; margin-bottom: 30px;">
+        <div class="col-lg-2">
+            &nbsp;
+        </div>
+        <div class="col-lg-4">
+            <center>
+                <br>
+                <a class="btn-lg btn-success" style="font-size: 20pt;"
+                   href="https://www.eventbrite.com/e/hack-kc-2016-national-day-of-civic-hacking-tickets-24799680512">SIGN
+                    UP</a>
+            </center>
+        </div>
+        <div class="col-lg-4">
+            <center><br>
+                <a class="btn-lg btn-success" style="font-size: 20pt;"
+                   href="http://goo.gl/CSg8p0">SUBMIT AN IDEA</a>
+            </center>
+        </div>
+        <div class="col-lg-2">
+            &nbsp;
+        </div>
+    </div>
+</div>
+
 
 <div class="container hack-details">
     <div class="row ">
@@ -127,19 +256,41 @@ is_nocd_2015: true
         <div class="col-lg-12">
 
             <h1 class="hack-details-blue"> What is Hack Kansas City?</h1>
-            
-            <p>HackKC is still going on.  <a href="http://www.kcdigitaldrive.org/article/hacking-for-good-hackkc-advances-projects-for-a-digitally-empowered-community/">See what happend</a> June 6th and 7th.</p>
 
-	    <p><a href="http://www.meetup.com/kcbrigade/">Signup</a> and join us every monday night to continue work on our projects.</p>
-	    
             <p>Part of the <a href="http://hackforchange.org/">National Day of Civic Hacking</a>, HackKC brings together
                 urbanists, hackers,
                 government staff, developers, designers, community organizers and regular people
                 to collaborate in building new solutions using publicly-released data,
                 open technology and design processes.</p>
 
-            <p>Unlike traditional hackathons, Hack KC starts with a two-day event and continues into the fall as we will work together to bring projects to successful completion. Even after the hackathon is over, Code for KC will support your team and help you create a great civic project, from concept to beta.</p>
+            <p>Unlike traditional hackathons, Hack KC starts with a two-day event and continues into the fall as we will
+                work together to bring projects to successful completion. Even after the hackathon is over, Code for KC
+                will support your team and help you create a great civic project, from concept to beta.</p>
 
+        </div>
+        <div class="col-lg-8">
+            <h1 class="hack-details-red"> Who should come?</h1>
+
+            <p>Everyone can participate! We seek people who care about the neighborhood and community.
+                Ideally, we need:
+            <ul>
+                <li> People with vision and passion</li>
+                <li> People with experience in all sorts of areas (see project ideas below)</li>
+                <li> Usability designers and graphic designers</li>
+                <li> Writers</li>
+                <li> Coders and testers</li>
+                <li> You!</li>
+                <li> Still not sure....check out the flow chart.</li>
+            </ul>
+            </p>
+        </div>
+        <div class="col-lg-4">
+
+
+            <h1><a href="{{ site.baseurl }}/should-i-attend-hackkc">Click for Decision Aid</a></h1>
+            <a href="{{ site.baseurl }}/should-i-attend-hackkc" alt="Flow chart to help determine if you should go">
+                <img src="{{ site.baseurl }}/images/HackforChange2015-flowchart-thumb.jpg"/>
+            </a>
         </div>
 
         <div class="col-lg-12">
@@ -149,28 +300,54 @@ is_nocd_2015: true
                 the City of KCMO, Community Capital Fund and others willing to support our projects. We just need coders
                 like you to lend a hand and a day or two to bring these ideas (and others) to life!
 
+        </div>
+    </div>
 
-            <center style="margin: 40px;"><a class="btn-lg btn-success" style="font-size: 20pt; color: white;"
-                                             href="hackkc-projects.html">PROJECT LIST</a></center>
+    <div id="projects" class="row">
 
+    </div>
+
+    <div class="row">
+
+        <div class="col-lg-12">
 
             <h1 class="hack-details-red"> How do I get involved?</h1>
 
-            <p>Come to our weekly meetups and get connected with a team.</p>
+
+            <ol>
+                <li><a
+                        href="https://www.eventbrite.com/e/hack-kc-2016-national-day-of-civic-hacking-tickets-24799680512">Sign
+                    up</a> yourself or your team. It's free!
+                <li><a href="http://goo.gl/CSg8p0">Submit a project idea</a> if you have one. If not, we will help
+                    you
+                    find a team.
+                <li>Check
+                    out existing projects above.
+                </li>
+            </ol>
+
+            <p>In the weeks prior to June 4, we will schedule project meetings (either in person, by phone or
+                online).
+                We will
+                be sure each team has the information and equipment needed, and ready to go for Hack KC.</p>
+
+            <p>Individuals are welcome to show up June 4-5 for a fun weekend of coding for a better metro!</p>
 
             <center style="margin: 40px;">
                 <a class="btn-lg btn-success" style="font-size: 20pt; color: white;"
-                   href="http://www.meetup.com/KCBrigade/">
-                    Meetup</a>
+                   href="https://www.eventbrite.com/e/hack-kc-2016-national-day-of-civic-hacking-tickets-24799680512">SIGN
+                    UP</a>
             </center>
 
             <h1 class="hack-details-blue"> What will I get out of it?</h1>
 
             <p><b>Solve local problems with your ideas and experience!</b> Do you have ideas to improve your town?
-                Can you make things better if you had the chance? Bring your ideas and make a positive change in your
+                Can you make things better if you had the chance? Bring your ideas and make a positive change in
+                your
                 community.</p>
 
-            <p><b>You'll expand your network</b>. HACK KC has members from a wide variety of industries, businesses and
+            <p><b>You'll expand your network</b>. HACK KC has members from a wide variety of industries, businesses
+                and
                 interests; developers, writers, project managers and many other professionals. Some are learning and
                 others are experienced - all are welcome!</p>
 
@@ -192,19 +369,21 @@ is_nocd_2015: true
 
             <h1 class="hack-details-red">SCHEDULE</h1>
 
-	 
-            <p>Please check this page again as all dates are now TBD</p>
+            <p>Saturday will start at 10:00 a.m. with opening remarks and team formation and wrap up around 8:00
+                p.m.
+                Sunday we will open the doors at 10:00 a.m. to and wrap up at 5:00 p.m. after project presentations.
+                In July we will meet to see how wear are doing.
+                November will be final presentations along with a shared celebration.</p>
 
-            <p><b>In August</b> teams will present their progress, to date, at an all-hands meeting. Date TBD.</p>
-
-            <p><b>In October/November</b> final presentations will be made along with a shared celebration. Date TBD.
-            </p>
 
             <h1 class="hack-details-blue"> Sponsors</h1>
+            <a class="logos" href="http://law.umkc.edu/" target="_blank"><img
+                    src="/images/umkc-law-stack_web_400px.jpg"></a>
             <br>
-            <p><img class="aligncenter size-full wp-image-1374" src="http://www.kcdigitaldrive.org/wp-content/uploads/2015/04/hackkc-sponsor-logos2-e1433340143920.png" alt="hackkcsponsors" width="500" height="375" /></p>
-
-            <p><em><a href="http://law.umkc.edu/">UMKC School of Law</a> - <a href="http://launchkc.org/">Launch KC</a> - <a href="http://www.kcdigitaldrive.org/">KC Digital Drive</a> - <a href="http://www.adaptivesg.com/">Adaptive Solutions Group</a> -<a href="http://www.multiservice.com/">MultiService</a></em></p>
+            <a class="logos" href="http://www.kcdigitaldrive.org/" target="_blank"><img src="/images/kcdd-logo.png"></a>
+            <br>
+            <a class="logos" href="http://codeforkc.org/" target="_blank"><img
+                    src="/images/Brigade-new_logo-crop.png"></a>
 
         </div>
     </div>
