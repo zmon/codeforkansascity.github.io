@@ -33,6 +33,8 @@ Tabletop.init({                                             // Requires js/table
 
         var converter = new showdown.Converter();
         for (var i in data) {
+
+            if ( data[i]['Display'] != 'Y' ) continue;
             var row = '';
 
             row += '        <div class="col-sm-3 col-md-6">';
