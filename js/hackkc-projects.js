@@ -52,6 +52,20 @@ Tabletop.init({                                             // Requires js/table
             row += '';
             row += '';
             row += '                <div style="background-color: #fff" class="card-action">';
+
+            if ( data[i]['Site']) {
+                row += '<p>Site: <a href="' + data[i]['Site']+ '" target="_blank">' + data[i]['Site'] + '</a><br>';
+            }
+            if ( data[i]['GitHub']) {
+                row += '<p>GitHub: <a href="' + data[i]['GitHub']+ '" target="_blank">' + data[i]['GitHub'] + '</a><br>';
+            }
+            if ( data[i]['Slack']) {
+                row += '<p>Slack: ' + data[i]['Slack'] + '<br>';
+            }
+            if ( data[i]['Languages']) {
+                row += '<p>Languages: ' + data[i]['Languages'] + '<br>';
+            }
+
             row += '                    &nbsp;';
             row += '                </div>';
             row += '            </div>';
