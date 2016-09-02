@@ -37,7 +37,7 @@ Tabletop.init({                                             // Requires js/table
             if ( data[i]['Display'] != 'Y' ) continue;
             var row = '';
 
-            row += '        <div class="col-sm-12">';
+            row += '        <div class="menu-category ">';
             row += '            <div class="card">';
             row += '                <div class="card-header">';
             row += '                    <a href="#"><span style="text-align: center;"';
@@ -53,18 +53,22 @@ Tabletop.init({                                             // Requires js/table
             row += '';
             row += '                <div style="background-color: #fff" class="card-action">';
 
+            row += '<p>';
+
             if ( data[i]['Site']) {
-                row += '<p>Site: <a href="' + data[i]['Site']+ '" target="_blank">' + data[i]['Site'] + '</a><br>';
+                row += '<a href="' + data[i]['Site']+ '" target="_blank">Visit Web Site</a>';
             }
             if ( data[i]['GitHub']) {
-                row += '<p>GitHub: <a href="' + data[i]['GitHub']+ '" target="_blank">' + data[i]['GitHub'] + '</a><br>';
+                row += ' <a href="' + data[i]['GitHub']+ '" target="_blank">See Code</a>';
             }
             if ( data[i]['Slack']) {
-                row += '<p>Slack: ' + data[i]['Slack'] + '<br>';
+                row += '<br /> Slack: ' + data[i]['Slack'];
             }
             if ( data[i]['Languages']) {
-                row += '<p>Languages: ' + data[i]['Languages'] + '<br>';
+                row += '&nbsp;&nbsp;&nbsp;&nbsp; Languages: ' + data[i]['Languages'];
             }
+
+            row += '</p>';
 
             row += '                    &nbsp;';
             row += '                </div>';

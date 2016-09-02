@@ -17,7 +17,7 @@ custom_js:
         box-sizing: border-box;
         border-radius: 2px;
         background-clip: padding-box;
-        background-color: #00c9ed;
+        background-color: #4cae4c;
         color: #000;
     }
 
@@ -85,6 +85,12 @@ custom_js:
         padding: 16px;
     }
 
+    .card .card-action p {
+        color: #ffab40;
+        margin-right: 16px;
+        transition: color 0.3s ease;
+        text-transform: uppercase;
+    }
     .card .card-action a {
         color: #ffab40;
         margin-right: 16px;
@@ -98,6 +104,24 @@ custom_js:
         background-color: #fff;
     }
 
+    /* http://stackoverflow.com/questions/19196082/bootstrap-how-to-stack-divs-of-different-heights
+       and refered to http://www.bootply.com/85737
+    */
+
+    .row2 {
+        -moz-column-width: 28em;
+        -webkit-column-width: 28em;
+        -moz-column-gap: 1em;
+        -webkit-column-gap: 1em;
+
+    }
+
+    .menu-category {
+        display: inline-block;
+        margin:  0.25rem;
+        padding:  1rem;
+        width:  100%;
+    }
 
 </style>
 
@@ -133,7 +157,7 @@ custom_js:
             that citizens of Kansas City will use to enhance the way they interact with their local government and
             communities around them. These teams include:</p>
 
-        <div id="projects" class="row">
+        <div id="projects" class="menu row2">
 
         </div>
 
