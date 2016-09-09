@@ -2,6 +2,8 @@
 layout: default
 local-chapter-name: Code for Kansas City
 location: Kansas City
+title: Welcome/Resources
+excerpt: Resources to get started with Code for Kansas City
 desc: Indoc for new members to Code for Kansas City, a Code for America Brigade
 author: Paul Barham, Jason Harper, and more
 web-page-title: New Attendee Resources for Code for Kansas City
@@ -11,6 +13,8 @@ schedule: weekly from 6:00-9:00 pm on Wednesdays
 homepage-url: http://codeforkc.org
 google-group-url: https://groups.google.com/a/codeforamerica.org/forum/#!forum/c4hrva
 meetup-url: http://www.meetup.com/KCBrigade/
+slack-invite-url: http://slackinvite.me/to/codeforkc
+slack-url: https://codeforkc.slack.com
 twitter-hashtag: #codeforkc
 captain1: Paul Barham
 captain2: Jason Haper
@@ -117,6 +121,8 @@ There are also non-programming tasks in our "task list" at [http://codeforkc.org
 * Join our Meetup: [{{page.meetup-url}}]({{page.meetup-url}})
 
 * Join our Google Group Forum: [{{page.google-group-url}}]({{page.google-group-url}})
+
+* Join our [Slack]({{page.slack-url}}) : [{{page.slack-invite-url}}]({{page.slack-invite-url}})
 
 
 ## Get Inspired
