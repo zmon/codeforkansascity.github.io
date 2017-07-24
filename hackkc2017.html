@@ -1,0 +1,169 @@
+---
+layout: ndoch
+title: HACK KANSAS CITY - 2017
+excerpt: Hack, Learn, Make Something Good #HACKKC
+is_nocd_2015: true
+custom_css:
+- hackkc2017
+custom_js:
+- tabletop
+- hackkc-2017-projects
+- showdown
+- ndoch-2017
+---
+<script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDQNzkJUiUJBqI_pex-Xe9_1JD4sf2KZS8&sensor=false&extension=.js'></script>
+
+<script>
+    google.maps.event.addDomListener(window, 'load', init);
+    var map;
+    function init() {
+        var mapOptions = {
+            center: new google.maps.LatLng(39.032286, -94.582044),
+            zoom: 15,
+            zoomControl: true,
+            zoomControlOptions: {
+                style: google.maps.ZoomControlStyle.DEFAULT,
+            },
+            disableDoubleClickZoom: true,
+            mapTypeControl: true,
+            mapTypeControlOptions: {
+                style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+            },
+            scaleControl: false,
+            scrollwheel: false,
+            panControl: false,
+            streetViewControl: false,
+            draggable: false,
+            overviewMapControl: true,
+            overviewMapControlOptions: {
+                opened: false,
+            },
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+        }
+        var mapElement = document.getElementById('umkc-map');
+        var map = new google.maps.Map(mapElement, mapOptions);
+        var locations = [
+            ['UMKC School of Law', 'UMKC School of Law', 'undefined', 'undefined', 'undefined', 39.032361, -94.58182239999996, 'https://mapbuildr.com/assets/img/markers/default.png']
+        ];
+        for (i = 0; i < locations.length; i++) {
+            if (locations[i][1] == 'undefined') {
+                description = '';
+            } else {
+                description = locations[i][1];
+            }
+            if (locations[i][2] == 'undefined') {
+                telephone = '';
+            } else {
+                telephone = locations[i][2];
+            }
+            if (locations[i][3] == 'undefined') {
+                email = '';
+            } else {
+                email = locations[i][3];
+            }
+            if (locations[i][4] == 'undefined') {
+                web = '';
+            } else {
+                web = locations[i][4];
+            }
+            if (locations[i][7] == 'undefined') {
+                markericon = '';
+            } else {
+                markericon = locations[i][7];
+            }
+            marker = new google.maps.Marker({
+                icon: markericon,
+                position: new google.maps.LatLng(locations[i][5], locations[i][6]),
+                map: map,
+                title: locations[i][0],
+                desc: description,
+                tel: telephone,
+                email: email,
+                web: web
+            });
+            link = '';
+        }
+
+    }
+</script>
+<style>
+    #umkc-map {
+        flex: 1;
+        flex-basis: 50px;
+    }
+</style>
+<div class="hero">
+    <div class="container">
+        <img class="responsive-img" src="../images/civic_hacking_logo.png" width="600"/>
+        <p class="hero-event-date">
+            <span>September 22-23, 2017</span>
+            <a href="#">#hackKC</a>
+            <a href="#">@codeforkc</a>
+        </p>
+        <div class="hero-event-overview">
+            <p>Join local designers, developers, doers and thinkers with a passion for making local government work better through technology.</p>
+        </div>
+    </div>
+</div>
+<div class="content-panel">
+    <div class="container">
+        <p>Join the Kansas City Code Brigade for an exciting two day hackathon where we write apps that solve community problems.Do you love coding? How does working on open source while solving practable problems sound to you? Then join us for this exciting two day event!</p>
+        <p>The fun doesn't stop there either! Projects continue well after the hackathon until they are complete. Some apps from previous years have stayed on board for years!</p>
+    </div>
+</div>
+<div class="content-panel event-info">
+    <div class="container event-info-container">
+        <div class="event-details">
+            <h3>Dates</h3>
+            <p>September 22, 2017<br/>9:00 AM- 8:00 PM<p>
+            <p>September 23, 2017<br/>10:00 AM - 6:00 PM</p>
+            <h3>Location</h3>
+            <address>
+                UMKC Law of School<br/>
+                500 East 52nd Street<br/> 
+                Kansas City, MO 64110
+            </address>
+        </div>
+        <div id='umkc-map'></div>
+    </div>
+</div>
+<div class="content-panel projects">
+    <div class="container">
+       <h3 class="content-panel-header">Projects</h3>
+        <div id="projects" class="projects-container"></div>
+    </div>
+</div>
+<div class="content-panel sponsors">
+    <div class="container">
+       <h3 class="content-panel-header">Sponsors</h3>
+        <div class="sponsors-container">
+            <a class="logos" href="http://law.umkc.edu/" target="_blank">
+                <img src="/images/umkc-law-stack_web_400px.jpg" width="200">
+            </a>
+            <a class="logos" href="https://fiber.google.com" target="_blank">
+                <img src="/images/google-fiber.png" width="200">
+            </a>
+            <a class="logos" href="http://www.polsinelli.com/" target="_blank">
+                <img src="/images/Polsinelli_Color_logo.jpg" width="200">
+            </a>
+            <a class="logos" href="http://www.kcdigitaldrive.org/" target="_blank">
+                <img src="/images/kcdd-logo.png" width="200">
+            </a>
+            <a class="logos" href="http://codeforkc.org/" target="_blank">
+                <img src="/images/c4kc_brigade_logo.png" width="200">
+            </a>
+        </div>
+    </div>
+</div>
+<div class="content-panel supporters">
+    <div class="container">
+        <h3 class="content-panel-header">Supporters</h3>
+        <div class="sponsors-container">
+            <a class="logos" href="http://law.umkc.edu/" target="_blank"><img
+                    src="/images/Sprint_Accelerator_Logo.jpg" width="200"></a>
+        </div>
+    </div>
+</div>
+
+
+
