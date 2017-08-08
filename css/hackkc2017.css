@@ -8,6 +8,11 @@ a {
   cursor: pointer;
 }
 
+.button-center {
+  text-align: center;
+  padding-bottom: 1em;
+}
+
 .hero {
   background-image: url('../images/ndoch2016working.png');
   background-size: cover;
