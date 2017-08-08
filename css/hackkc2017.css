@@ -9,13 +9,17 @@ a {
 }
 
 .hero {
-  background-image: url('../images/ndoch2016group.png');
+  background-image: url('../images/ndoch2016working.png');
   background-size: cover;
   background-position: center;
   padding-top: 40px;
-  padding-bottom: 40px;
 }
 
+.hero .container {
+  background: rgba(0, 0, 0, 0.75);
+  padding-top: 10px;
+  border-radius: 10px;
+}
 .responsive-img {
   max-width: 100%;
 }
@@ -27,15 +31,24 @@ a {
 
 .hero-event-overview {
   margin-top: 25%;
+  padding: 10px 20px;
+  background: #000;
 }
 
 .hero-event-date {
   margin-top: 10px;
 }
 
+.eventbrite-registration {
+  margin-top: 10px;
+}
+
 .hero-event-date > * {
   margin-right: 0;
-  display: block;
+  margin-bottom: 10px;
+  display: table;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .hero a {
@@ -59,7 +72,7 @@ a {
 }
 
 .event-info {
-  background-color: #D2292F;
+  background-color: #595759;
   color: #ffffff;
   padding-top: 40px;
   padding-bottom: 40px;
@@ -67,6 +80,7 @@ a {
 
 .event-info-container {
   display: flex;
+  flex-direction: column;
   align-items: stretch;
 }
 
@@ -81,7 +95,7 @@ a {
 }
 
 .projects {
-  background: #0C83C4;
+  background: #274242;
   color: #ffffff;
   padding-top: 20px;
 }
@@ -94,11 +108,15 @@ a {
   margin-bottom: 10px;
 }
 
+.collapsible-panel .collapsible-panel-inner a {
+  color: #106B6D;
+}
+
 .collapsible-panel .header {
   padding: 10px;
   margin-top: 0;
   margin-bottom: 0;
-  background: #f2f2f2;
+  background: #ffffff;
   border-bottom: #eee solid 1px;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   display: flex;
@@ -107,19 +125,19 @@ a {
 
 .collapsible-panel .header .toggler {
   margin-left: auto;
-  align-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 .collapsible-panel-inner {
   display: none;
-  flex: 1;
-  flex-direction: column;
 }
 
 .collapsible-panel-content {
   display: none;
   padding: 10px;
-  flex: 1;
+  flex-grow: 1;
+  flex-shrink: 0;
 }
 
 .collapsible-panel-footer {
@@ -127,20 +145,25 @@ a {
   padding: 10px;
   border-top: #eee solid 1px;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
 }
 
 .collapsible-panel-extended .collapsible-panel-inner {
-  display: flex;
+  display: block;
 }
 
 .toggler {
+  -webkit-transition: -webkit-transform 0.25s linear;
+  transition: -webkit-transform 0.25s linear;
+  -o-transition: transform 0.25s linear;
   transition: transform 0.25s linear;
+  transition: transform 0.25s linear, -webkit-transform 0.25s linear;
 }
 
 .collapsible-panel-extended .toggler {
-  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .collapsible-panel-content {
@@ -161,10 +184,32 @@ a {
 
 .sponsors-container a {
   padding: 20px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.content-panel q {
+  font-size: 2em;
+  text-align: center;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.attendee-profiles figure {
+  text-align: center;
+  padding: 20px;
+  color: #595759;
+}
+
+.attendee-profiles figure img {
+  cursor: pointer;
+}
+
+.attendee-profiles figure figcaption {
+  display: none;
 }
 
 footer {
@@ -174,9 +219,12 @@ footer {
   padding: 10px;
 }
 
-@media (min-width: 480px) {
+@media (min-width: 550px) {
   .collapsible-panel-inner {
     display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 0;
   }
 
   .collapsible-panel-content {
@@ -191,6 +239,10 @@ footer {
     display: none;
   }
 
+  .event-info-container {
+    flex-direction: row;
+  }
+
   .hero {
     font-size: 1.25em;
   }
@@ -201,22 +253,30 @@ footer {
   }
 
   .projects-container,
-  .sponsors-container {
-    display: grid;
-    grid-gap: 0.5%;
-    grid-template-columns: repeat(2, 49%);
+  .sponsors-container,
+  .attendee-profiles-container {
     margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+
+    > * {
+      width: 33%;
+    }
   }
 
-  .project {
-    margin-bottom: 0;
+  .projects-container > *,
+  .sponsors-container > *,
+  .attendee-profiles-container > * {
+    width: calc(50% - 5px);
   }
 }
 
-@media (min-width: 768px) {
-  .projects-container,
-  .sponsors-container {
-    grid-template-columns: repeat(3, 33%);
-    grid-gap: 0.5%;
+@media(min-width: 768px) {
+  .projects-container > *,
+  .sponsors-container > *,
+  .attendee-profiles-container > * {
+    width: calc(33.33% - 5px);
   }
 }

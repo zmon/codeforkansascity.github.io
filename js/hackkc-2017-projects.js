@@ -33,7 +33,6 @@ Tabletop.init({                                             // Requires js/table
 
         var converter = new showdown.Converter();
         for (var i in data) {
-            console.log(data);
             if ( data[i]['Display'] != 'Y' ) continue;
             var row = '';
 
@@ -58,8 +57,8 @@ Tabletop.init({                                             // Requires js/table
             if ( data[i]['GitHub']) {
                 row += '<a href="' + data[i]['GitHub']+ '" target="_blank">' + '<img width="16" height="16" src="../images/github.png"/>' + '</a>';
             }
-            if ( data[i]['Slack']) {
-                row += '<a href="https://codeforkc.slack.com/"><img width="16" src="../images/slack.png"/> ' + data[i]['Slack'] + '</span>';
+            if ( data[i]['Slack ID']) {
+                row += '<a href="https://codeforkc.slack.com/messages/' + data[i]['Slack ID'] + '" target="_blank"><img width="16" src="../images/slack.png"/></a>';
             }
             
 
