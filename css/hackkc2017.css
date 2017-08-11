@@ -23,7 +23,7 @@ a {
 .hero .container {
   background: rgba(0, 0, 0, 0.75);
   padding-top: 10px;
-  border-radius: 10px;
+  border-radius: 0;
 }
 .responsive-img {
   max-width: 100%;
@@ -32,6 +32,11 @@ a {
 .hero p {
   color: #ffffff;
   font-size: 1.25em;
+}
+
+.hero .registration-btn {
+  max-width: 100%;
+  width: 30em;
 }
 
 .hero-event-overview {
@@ -283,5 +288,9 @@ footer {
   .sponsors-container > *,
   .attendee-profiles-container > * {
     width: calc(33.33% - 5px);
+  }
+
+  .hero .container {
+    border-radius: 10px;
   }
 }
