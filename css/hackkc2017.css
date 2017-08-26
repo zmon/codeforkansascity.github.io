@@ -222,6 +222,12 @@ a {
   display: none;
 }
 
+.schedule-of-events .collapsible-panel .header {
+  border: none;
+  box-shadow: unset;
+  border-bottom: #000 solid 1px;
+}
+
 footer {
   background: #f2f2f2;
   color: #000000;
