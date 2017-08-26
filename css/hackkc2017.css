@@ -8,6 +8,11 @@ a {
   cursor: pointer;
 }
 
+/* Bootstrap override */
+h3 small {
+  color: #595959;
+}
+
 .button-center {
   text-align: center;
   padding-bottom: 1em;
