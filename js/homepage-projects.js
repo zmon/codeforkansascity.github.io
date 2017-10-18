@@ -28,13 +28,14 @@ function createCORSRequest(method, url) {
 
 
 Tabletop.init({                                             // Requires js/tabletop.js
-    key: '1xmdxVbzT0XJMyvQbP4mIr01pwL5SRiR9L-RRY5L90W0', // Projects List
+    key: '1T0rcwNECJF2DE1pkSOc30o9LzKsWN3gIwrPexT3HNck', // Projects List
     callback: function (data, tabletop) {
 
         var converter = new showdown.Converter();
         for (var i in data) {
 
-            if ( data[i]['Display'] != 'Y' ) continue;
+            if ( data[i]['HomePage'] != 'Y' ) continue;
+
             var row = '';
 
             row += '        <div class="menu-category ">';
@@ -44,7 +45,7 @@ Tabletop.init({                                             // Requires js/table
             row += '                                                            class="card-title">' + data[i]['Title'] + '</span></a>';
             row += '                </div>';
             row += '                <div style="background-color: #fff; padding-top: 4px;" class="card-content">';
-            row += '                    <p>' + converter.makeHtml(data[i]['Short Desciption']) + '</p>';
+            row += '                    <p>' + converter.makeHtml(data[i]['Desciption']) + '</p>';
        //     row += '                    <p>Team: ' + converter.makeHtml(data[i]['Team']) + '</p>';
        //     row += '                    <p>Needs:' + converter.makeHtml(data[i]['Needs']) + '</p>';
 
@@ -59,7 +60,7 @@ Tabletop.init({                                             // Requires js/table
                 row += '<a href="' + data[i]['Site']+ '" target="_blank">Visit Web Site</a>';
             }
             if ( data[i]['GitHub']) {
-                row += ' <a href="' + data[i]['GitHub']+ '" target="_blank">See Code</a>';
+                row += ' <a href="' + data[i]['GitHub']+ '" target="_blank">See Code/GitHub</a>';
             }
             if ( data[i]['Slack']) {
                 row += '<br /> Slack: ' + data[i]['Slack'];
