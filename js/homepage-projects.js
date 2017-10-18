@@ -62,8 +62,8 @@ Tabletop.init({                                             // Requires js/table
             if ( data[i]['GitHub']) {
                 row += ' <a href="' + data[i]['GitHub']+ '" target="_blank">See Code/GitHub</a>';
             }
-            if ( data[i]['Slack']) {
-                row += '<br /> Slack: ' + data[i]['Slack'];
+            if ( data[i]['Slack ID']) {
+                row += '<br /> Slack: ' + data[i]['Slack ID'];
             }
             if ( data[i]['Languages']) {
                 row += '&nbsp;&nbsp;&nbsp;&nbsp; Languages: ' + data[i]['Languages'];
