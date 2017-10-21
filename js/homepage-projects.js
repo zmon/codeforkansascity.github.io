@@ -28,7 +28,8 @@ function createCORSRequest(method, url) {
 
 
 Tabletop.init({                                             // Requires js/tabletop.js
-    key: '1T0rcwNECJF2DE1pkSOc30o9LzKsWN3gIwrPexT3HNck', // Projects List
+    key: '12PACX-1vQ2DmH4o6dtm7bEZ0n4dxNWYf85hebAxePcTPBK1YURCvS9zMhIeUgoypcHcNKY3j6mXI0iZ7H-tDTK', // Projects List
+    debug: true,
     callback: function (data, tabletop) {
 
         var converter = new showdown.Converter();
