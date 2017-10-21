@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <title>Code for Kansas City | A Code for America Brigade</title>
+    <meta name="description"
+          content="Kansas City locals helping Kansas City government and local organizations open their data and create meaningful tools"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link href="css/style.css" rel="stylesheet"/>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+
+
+</head>
+<body data-spy="scroll" data-target=".navbar">
+
+<!-- NAVBAR
+================================================== -->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a href="#maincontent" class="skiplink">Skip to content</a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Code for Kansas City</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+
+                <li><a href="/welcome">Welcome/Resources</a></li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Events
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a target="_blank" href="/hackkc">Hack KC 2017</a></li>
+                        <li><a target="_blank" href="http://www.meetup.com/kcbrigade/">Weekly Meetups</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Past Events
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="/Report-Out-Recruitment-2016">Report Out and Recruitment</a></li>
+                        <li><a href="/hackkc">HackKC 2016</a></li>
+                        <li><a href="/codeacross2016">CodeAcross</a></li>
+                        <li><a href="http://www.kcdigitaldrive.org/project/hack-kansas-city-the-national-day-of-civic-hacking/" target="_blank">HackKC 2015</a></li>
+                        <li><a href="http://www.kcdigitaldrive.org/article/code-across-kc-hacking-for-a-healthier-community/" target="_blank">Code Across KC 2016</a></li>
+                        <li><a href="http://www.kcdigitaldrive.org/article/get-your-community-websites-apps-tested-by-kcs-first-civic-ux-group/" target="_blank">KC Civic UX Group</a></li>
+                        <li><a href="http://www.kcdigitaldrive.org/article/tech-volunteers-needed-grow-your-tech-skills-and-help-your-neighbors-at-code-for-kc/" target="_blank">Tech Volunteers Needed</a></li>
+                    </ul>
+                </li>
+
+                <!-- <li><a href="/blog">Blog</a></li> -->
+                <li><a href="/code-of-conduct">Code of Conduct</a></li>
+                <li><a target="_blank"
+                       href="https://docs.google.com/forms/d/1mRZJld_CPvCcS-WxhI3aDNRO9Fkpm0zK8dlpczG5i_4/viewform?c=0&w=1">Contact</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="https://github.com/codeforkansascity" title="GitHub"><i class="fa fa-github fa-lg"></i></a>
+                </li>
+                <li><a href="http://meetup.com/kcbrigade" title="Meetup"><i class="fa fa-users fa-lg"></i></a></li>
+                <li><a href="https://twitter.com/codeforkc" title="Twitter"><i class="fa fa-twitter fa-lg"></i></a></li>
+                <li><a href="http://eepurl.com/7gbQP" title="Mailing List"><span class="glyphicon glyphicon-envelope"
+                                                                                 aria-hidden="true"></span></a></li>
+                <li><a href="https://codeforkc.slack.com" title="Slack"><i class="fa fa-slack fa-lg"></i></a></li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</nav>
+
+
+
+<!-- Alert for At Meetup Checkin Form
+         <div class="alert alert-success visible-xs" role="alert">
+  <span class="glyphicon glyphicon-ok-sign pull-left" style="font-size:24pt;"></span>
+  If you're currently at the Meetup, <a href="https://docs.google.com/forms/d/1kcHc3gZQXVHkLg2mxXfjEiPeyVZWf6__HrbAqftZuFE/viewform">why not check in?</a>
+</div> -->
+
+<!-- Carousel - only using one at the moment
+================================================== -->
+<div id="banner" class="carousel slide" data-ride="carousel" data-interval="20000">
+    <!-- Indicators -->
+    <!-- <ol class="carousel-indicators">
+      <li data-target="#banner" data-slide-to="0" class="active"></li>
+      <li data-target="#banner" data-slide-to="1"></li>
+    </ol> -->
+
+    <div class="carousel-inner">
+        <div class="item active">
+            <div class="container">
+                <div class="jumbotron col-md-12">
+                    <h1>We are Code for <br/> Kansas City</h1>
+                    <div class="row">
+                        <p class="lead col-md-10 col-md-offset-1">
+                            Join developers, designers, data geeks, policy buffs and idea makers working with local
+                            government to make Kansas City a better place through civic hacking and open data.
+                        </p>
+                    </div>
+                    <a class="btn btn-success btn-lg" href="#callouts">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /.carousel -->
+<div class="col-lg-12">
+</div>
+
+<div class="container kcmarketing">
+    <div class="row" id="callouts">
+        <div class="col-md-4">
+            <img src="/images/brigade.150.png">
+
+            <h1>Join the Brigade</h1>
+
+            <p class="lead callout">We'd love to have you at our Meetups.<br></p>
+            <a class="btn btn-success btn-lg" href="http://www.meetup.com/kcbrigade" target="_blank">MEET US</a>
+        </div>
+        <div class="col-md-4">
+            <img src="/images/noun_91769.150.png">
+
+            <h1>Find a Project</h1>
+
+            <p class="lead callout">We’re committing code for good.<br></p>
+            <a class="btn btn-success btn-lg" href="/#project-list">VIEW MORE</a>
+        </div>
+        <div class="col-md-4">
+            <img src="/images/noun_86192.150.png">
+
+            <h1>Submit an Idea</h1>
+
+            <p class="lead callout">Got an idea to make government run better?</p>
+            <a class="btn btn-success btn-lg" href="http://goo.gl/forms/dXz7QfBBfl" target="_blank">TELL US</a>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container">
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
+    <style>
+        .card {
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+        }
+
+        .card {
+            margin-top: 10px;
+            box-sizing: border-box;
+            border-radius: 2px;
+            background-clip: padding-box;
+            background-color: #4cae4c;
+            color: #000;
+        }
+
+        .card span.card-title {
+            color: #000;
+            font-size: 18px;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+
+        .card .card-image {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card .card-image img {
+            border-radius: 2px 2px 0 0;
+            background-clip: padding-box;
+            position: relative;
+            z-index: -1;
+        }
+
+        .card .card-image span.card-title {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding: 16px;
+        }
+
+        .card .card-header {
+            padding: 16px;
+            border-radius: 0 0 2px 2px;
+            background-clip: padding-box;
+            box-sizing: border-box;
+            position: relative;
+            bottom: 0;
+            left: 0;
+        }
+
+        .card .card-content {
+            padding: 0 16px 16px 16px;
+            border-radius: 0 0 2px 2px;
+            background-clip: padding-box;
+            box-sizing: border-box;
+            backgroun-color: #000;
+            color: #111;
+            padding-top: 4px;
+            min-height: 100px;
+            font-size: 21px;
+            font-weight: 300;
+            line-height: 1.4;
+        }
+
+        .card .card-content p {
+            margin: 0;
+            color: inherit;
+        }
+
+        .card .card-content span.card-title {
+            line-height: 48px;
+        }
+
+        .card .card-action {
+            border-top: 1px solid rgba(160, 160, 160, 0.2);
+            padding: 16px;
+        }
+
+        .card .card-action p {
+            color: #ffab40;
+            margin-right: 16px;
+            transition: color 0.3s ease;
+            text-transform: uppercase;
+        }
+        .card .card-action a {
+            color: #ffab40;
+            margin-right: 16px;
+            transition: color 0.3s ease;
+            text-transform: uppercase;
+        }
+
+        .card .card-action a:hover {
+            color: #ffd8a6;
+            text-decoration: none;
+            background-color: #fff;
+        }
+
+        /* http://stackoverflow.com/questions/19196082/bootstrap-how-to-stack-divs-of-different-heights
+           and refered to http://www.bootply.com/85737
+        */
+
+        .row2 {
+            -moz-column-width: 28em;
+            -webkit-column-width: 28em;
+            -moz-column-gap: 1em;
+            -webkit-column-gap: 1em;
+
+        }
+
+        .menu-category {
+            display: inline-block;
+            margin:  0.25rem;
+            padding:  1rem;
+            width:  100%;
+        }
+
+    </style>
+
+    <div class="row">
+        <div class="col-lg-12">
+        </div>
+        <div class="col-md-12">
+
+            <h1>Who We Are</h1>
+
+            <p class="lead">We’re Kansas City’s chapter of the Code for America Brigade network, a group of civic-minded
+                geeks who volunteer our talents to projects that improve how our local governments and community
+                organizations use the web. We strive for principles of open data and technology advocacy for civic good and
+                are supported by our host organization, <a target="_blank" href="http://www.kcdigitaldrive.org/">KC Digital
+                    Drive</a>. The
+                Brigade is about action, so join us at a Hack
+                Night where we’ll commit code to make a difference in our city!</p>
+            <!--
+                    <h1>HackKC Midpoint Roundup</h1>
+
+                    <p>Join us August 31, from 6-8pm upstairs in the big room at the Sprint Accelerator for pizza and geeking out as
+                        we hear progress reports from teams who participated in HackKC: The National Day of Civic Hacking hackathon
+                        this past June.</p>
+
+                    <p>We'll also welcome people from the community with ideas for technology projects to come pitch their
+                        ideas.</p>
+
+
+                                <h2>Meet the Teams</h2>
+            <p class="lead">Since the HackKC hackathon in June teams have been working hard at our weekly Hack Night to
+                develop apps
+                that citizens of Kansas City will use to enhance the way they interact with their local government and
+                communities around them. These teams include:</p>
+            -->
+
+            <h1>Projects</h1>
+
+            <a name="project-list"></a>
+
+
+            <div id="projects" name="projects" class="menu row2">
+
+            </div>
+
+            <br>
+
+            <h1>Delivered Projects</h1>
+
+            <h3><a href="http://communitykc.org" target="_blank">CommunityKC Mapping Tool</a></h3>
+
+            <p style="padding-bottom: 1em; margin-bottom: 1em;"><a href="http://communitykc.org" target="_blank"><img name="groups" class="featurette-image pull-left"
+                                                                                                                      src="images/community-kc-2.gif"
+                                                                                                                      alt="Screen shot of CommunityKC.org"/></a></p>
+
+            <br style="clear: both">
+            <br style="clear: both">
+
+            <h3 style="padding-top: 1em; margin-top: 1em;"><a href="http://igotmineinkc.org/" target="_blank">I Got Mine in KC</a></h3>
+
+            <p><a href="http://igotmineinkc.org/" target="_blank"><img name="groups" class="featurette-image pull-left"
+                                                                       src="images/i-got-mine.gif"
+                                                                       alt="Screen shot of I Got Mine in KC"/></a></p>
+
+
+            <br style="clear: both">
+            <h1 class="index">Hack With Us</h1>
+
+            <p class="lead">We meet every week on Monday night to hack, socialize and learn. Join us on Meetup for the
+                latest info. Upcoming meetings:</p>
+
+            <ul class="lead">
+                <li>Oct. 23 - Hack Night - <a target="_blank" href="https://www.meetup.com/KCBrigade/events/243877396/">RSVP</a></li>
+                <li>Nov.  6 - Hack Night & Pizza - <a target="_blank" href="https://www.meetup.com/KCBrigade/events/243877445/">RSVP</a></li>
+                <li>Nov. 13 - Hack Night - <a target="_blank" href="https://www.meetup.com/KCBrigade/events/243877454/">RSVP</a></li>
+                <li>Nov. 20 - Hack Night - <a target="_blank" href="https://www.meetup.com/KCBrigade/events/243877461/">RSVP</a></li>
+                <li>Nov. 27 - Hack Night - <a target="_blank" href="https://www.meetup.com/KCBrigade/events/243877463/">RSVP</a></li>
+                <li>Dec.  4 - Hack Night & Pizza - <a target="_blank" href="https://www.meetup.com/KCBrigade/events/243877468/">RSVP</a></li>
+            </ul>
+
+            <h1 class="index" style="text-align: center">Thanks to our Sponsors</h1>
+
+            <p style="text-align: center"><img name="groups" class="featurette-image" src="images/google-fiber.png"
+                                               alt="Google Fiber our Sponsor"/></p>
+
+            <br style="clear: both">
+
+            <p class="lead">Interested in becoming a sponsor? Contact Aaron at KC Digital Drive:
+                adeacon@kcdigitaldrive.org</p>
+
+            <h1 class="index">Stay in Touch</h1>
+
+            <p class="lead">Got a question? Contact Brigade captain Paul Barham at captain@codeforkc.org. Sign up for
+                our
+                <a target="_blank" href="http://eepurl.com/7gbQP ">mailing list</a> to receive updates.
+            </p>
+
+
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+
+    <div class="footer">
+        <p class="pull-right">Code for Kansas City | <a href=""><i class="icon-github"></i> Pull requests welcome!</a></p>
+    </div>
+
+
+</div><!-- /.container -->
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ICanHaz.js/0.10.3/ICanHaz.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.2/moment.min.js"></script>
+
+
+
+
+<script src='/js/homepage-projects.js' type="text/javascript"></script>
+
+<script src='/js/showdown.js' type="text/javascript"></script>
+<script  type="text/javascript">
+
+
+    Tabletop.init({                                             // Requires js/tabletop.js
+//    key: '1T0rcwNECJF2DE1pkSOc30o9LzKsWN3gIwrPexT3HNck', // Projects List
+        key: '12PACX-1vQ2DmH4o6dtm7bEZ0n4dxNWYf85hebAxePcTPBK1YURCvS9zMhIeUgoypcHcNKY3j6mXI0iZ7H-tDTK', // Projects List
+        debug: true,
+        callback: function (data, tabletop) {
+            console.dir('a');
+            var converter = new showdown.Converter();
+            for (var i in data) {
+                console.dir(i);
+                console.dir(data[i]['HomePage']);
+
+                if ( data[i]['HomePage'] != 'Y' ) continue;
+                console.dir('hit');
+                var row = '';
+
+                row += '        <div class="menu-category ">';
+                row += '            <div class="card">';
+                row += '                <div class="card-header">';
+                row += '                    <a href="#"><span style="text-align: center;"';
+                row += '                                                            class="card-title">' + data[i]['Title'] + '</span></a>';
+                row += '                </div>';
+                row += '                <div style="background-color: #fff; padding-top: 4px;" class="card-content">';
+                row += '                    <p>' + converter.makeHtml(data[i]['Desciption']) + '</p>';
+                //     row += '                    <p>Team: ' + converter.makeHtml(data[i]['Team']) + '</p>';
+                //     row += '                    <p>Needs:' + converter.makeHtml(data[i]['Needs']) + '</p>';
+
+                row += '                </div>';
+                row += '';
+                row += '';
+                row += '                <div style="background-color: #fff" class="card-action">';
+
+                row += '<p>';
+
+                if ( data[i]['Site']) {
+                    row += '<a href="' + data[i]['Site']+ '" target="_blank">Visit Web Site</a>';
+                }
+                if ( data[i]['GitHub']) {
+                    row += ' <a href="' + data[i]['GitHub']+ '" target="_blank">See Code/GitHub</a>';
+                }
+                if ( data[i]['Slack ID']) {
+                    row += '<br /> Slack: ' + data[i]['Slack ID'];
+                }
+                if ( data[i]['Languages']) {
+                    row += '&nbsp;&nbsp;&nbsp;&nbsp; Languages: ' + data[i]['Languages'];
+                }
+
+                row += '</p>';
+
+                row += '                    &nbsp;';
+                row += '                </div>';
+                row += '            </div>';
+                row += '        </div>';
+
+
+                $('#projects').append(row);
+
+
+            }
+        }
+    });
+
+
+</script>
+
+</body>
+</html>

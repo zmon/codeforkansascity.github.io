@@ -26,15 +26,20 @@ function createCORSRequest(method, url) {
 
 // Please note that the column names in this spread sheet were defined by the Google Form that inserts data into it.
 
-
+// http://cors.io/?u=https://docs.google.com/a/codeforkc.org/spreadsheets/d/1qQcHRsaWeekCIg-4jPRjXMy-MX1oT4-VmkgfPiRgOp0/edit?usp=sharing
 Tabletop.init({                                             // Requires js/tabletop.js
-    key: '12PACX-1vQ2DmH4o6dtm7bEZ0n4dxNWYf85hebAxePcTPBK1YURCvS9zMhIeUgoypcHcNKY3j6mXI0iZ7H-tDTK', // Projects List
-    debug: true,
+    key: '1T0rcwNECJF2DE1pkSOc30o9LzKsWN3gIwrPexT3HNck', // Projects List
+    debug: false,
     callback: function (data, tabletop) {
+
+        console.dir('test');
+        console.dir(data);
 
         var converter = new showdown.Converter();
         for (var i in data) {
 
+
+            console.dir(data[i]);
             if ( data[i]['HomePage'] != 'Y' ) continue;
 
             var row = '';
