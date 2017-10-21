@@ -28,14 +28,18 @@ function createCORSRequest(method, url) {
 
 
 Tabletop.init({                                             // Requires js/tabletop.js
-    key: '1T0rcwNECJF2DE1pkSOc30o9LzKsWN3gIwrPexT3HNck', // Projects List
+//    key: '1T0rcwNECJF2DE1pkSOc30o9LzKsWN3gIwrPexT3HNck', // Projects List
+    key: '12PACX-1vQ2DmH4o6dtm7bEZ0n4dxNWYf85hebAxePcTPBK1YURCvS9zMhIeUgoypcHcNKY3j6mXI0iZ7H-tDTK', // Projects List
+    debug: true,
     callback: function (data, tabletop) {
-
+console.dir('a');
         var converter = new showdown.Converter();
         for (var i in data) {
+console.dir(i);
+            console.dir(data[i]['HomePage']);
 
             if ( data[i]['HomePage'] != 'Y' ) continue;
-
+console.dir('hit');
             var row = '';
 
             row += '        <div class="menu-category ">';
@@ -81,9 +85,7 @@ Tabletop.init({                                             // Requires js/table
 
 
         }
-    },
-    orderby: 'Type of Entity',
-    simpleSheet: true
+    }
 });
 
 
