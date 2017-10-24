@@ -28,19 +28,21 @@ function createCORSRequest(method, url) {
 
 // http://cors.io/?u=https://docs.google.com/a/codeforkc.org/spreadsheets/d/1qQcHRsaWeekCIg-4jPRjXMy-MX1oT4-VmkgfPiRgOp0/edit?usp=sharing
 Tabletop.init({                                             // Requires js/tabletop.js
-    key: '1T0rcwNECJF2DE1pkSOc30o9LzKsWN3gIwrPexT3HNck', // Projects List
     debug: false,
+
+    key: '1sVK8tgfTFPhUOpsgiGhb71hWJ26XIhiYIlg8XrGlQyI', // Projects List
+
+    simpleSheet: false,
+    wanted: ['Project Information'],
+    orderby: 'Type of Entity',
+
     callback: function (data, tabletop) {
-
-        console.dir('test');
-        console.dir(data);
-
         var converter = new showdown.Converter();
-        for (var i in data) {
+        var worksheetRows = tabletop.sheets("Project Information").all();
+        for (var i in worksheetRows) {
+            var worksheetRow = worksheetRows[i];
 
-
-            console.dir(data[i]);
-            if ( data[i]['HomePage'] != 'Y' ) continue;
+            if ( worksheetRow['HomePage'] != 'Y' ) continue;
 
             var row = '';
 
@@ -48,12 +50,12 @@ Tabletop.init({                                             // Requires js/table
             row += '            <div class="card">';
             row += '                <div class="card-header">';
             row += '                    <a href="#"><span style="text-align: center;"';
-            row += '                                                            class="card-title">' + data[i]['Title'] + '</span></a>';
+            row += '                                                            class="card-title">' + worksheetRow['Title'] + '</span></a>';
             row += '                </div>';
             row += '                <div style="background-color: #fff; padding-top: 4px;" class="card-content">';
-            row += '                    <p>' + converter.makeHtml(data[i]['Desciption']) + '</p>';
-       //     row += '                    <p>Team: ' + converter.makeHtml(data[i]['Team']) + '</p>';
-       //     row += '                    <p>Needs:' + converter.makeHtml(data[i]['Needs']) + '</p>';
+            row += '                    <p>' + converter.makeHtml(worksheetRow['Description']) + '</p>';
+       //     row += '                    <p>Team: ' + converter.makeHtml(worksheetRow['Team']) + '</p>';
+       //     row += '                    <p>Needs:' + converter.makeHtml(worksheetRow['Needs']) + '</p>';
 
             row += '                </div>';
             row += '';
@@ -62,17 +64,17 @@ Tabletop.init({                                             // Requires js/table
 
             row += '<p>';
 
-            if ( data[i]['Site']) {
-                row += '<a href="' + data[i]['Site']+ '" target="_blank">Visit Web Site</a>';
+            if ( worksheetRow['Site']) {
+                row += '<a href="' + worksheetRow['Site']+ '" target="_blank">Visit Web Site</a>';
             }
-            if ( data[i]['GitHub']) {
-                row += ' <a href="' + data[i]['GitHub']+ '" target="_blank">See Code/GitHub</a>';
+            if ( worksheetRow['GitHub']) {
+                row += ' <a href="' + worksheetRow['GitHub']+ '" target="_blank">See Code/GitHub</a>';
             }
-            if ( data[i]['Slack ID']) {
-                row += '<br /> Slack: ' + data[i]['Slack ID'];
+            if ( worksheetRow['Slack ID']) {
+                row += '<br /> Slack: ' + worksheetRow['Slack ID'];
             }
-            if ( data[i]['Languages']) {
-                row += '&nbsp;&nbsp;&nbsp;&nbsp; Languages: ' + data[i]['Languages'];
+            if ( worksheetRow['Languages']) {
+                row += '&nbsp;&nbsp;&nbsp;&nbsp; Languages: ' + worksheetRow['Languages'];
             }
 
             row += '</p>';
@@ -82,14 +84,13 @@ Tabletop.init({                                             // Requires js/table
             row += '            </div>';
             row += '        </div>';
 
+            console.dir('Data: %o; HTML: %o', worksheetRow, row);
 
             $('#projects').append(row);
 
 
         }
-    },
-    orderby: 'Type of Entity',
-    simpleSheet: true
+    }
 });
 
 
