@@ -122,7 +122,7 @@ There are also non-programming tasks in our "task list" at [http://codeforkc.org
 
 * Join our Google Group Forum: [{{page.google-group-url}}]({{page.google-group-url}})
 
-* Join our [Slack]({{page.slack-url}}) : [{{page.slack-invite-url}}]({{page.slack-invite-url}})
+* Join our [Slack]({{page.slack-invite-url}})
 
 
 ## Get Inspired
