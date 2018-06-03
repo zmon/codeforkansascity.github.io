@@ -1,23 +1,19 @@
 [![Stories in Ready](https://badge.waffle.io/codeforkansascity/codeforkansascity.github.io.png?label=ready&title=Ready)](https://waffle.io/codeforkansascity/codeforkansascity.github.io)
 # code4hr.org
 
-The website for the Code for Hampton Roads Brigade
+The website for the Code for Kansas City Brigade
 
 ### Goals
-1. Explain what Code for HR is and the type of work we do.
+1. Explain what Code for KC is and the type of work we do.
 2. To celebrate our events, projects, and discussions!
 3. Encourage current and new members to participate with clear ways to get involved.
-4. To have this site be easily reused by other Brigades just starting out.
+4. Was forked from Code for Hampton Roads
 
 ### Tech
 
-Built using [Jekyll](http://jekyllrb.com/), [Bootstrap](http://getbootstrap.com/), and the [CfAPI](https://github.com/codeforamerica/cfapi).
+Built using [Jekyll](http://jekyllrb.com/), [Bootstrap](http://getbootstrap.com/), and Google Sheets
 
 ## Contributing
-
-### <a name="issues"></a>Submitting an Issue
-
-We use [GitHub Issues](https://github.com/code4hr/code4hr/issues) to track bugs and features. We've included several of our open GitHub Issues right on our homepage using the [Civic Tech Issue Finder](http://www.codeforamerica.org/geeks/civicissues).
 
 
 ### Running the Site Locally on Your Computer
@@ -36,21 +32,11 @@ Your computer should now be serving your local copy of the site at:
 
 [http://0.0.0.0:4000](http://0.0.0.0:4000).
 
-### Sharing Your Changes Using Jekit
-
-You can use the nifty [Jekit](https://jekit.codeforamerica.org/) app to preview changes you make to this site.
-
-To do this, fork this repo, and commit your changes on a branch to your fork. You can then preview what your changes look like by navigating to:
-
-https://jekit.codeforamerica.org/USERNAME/sfbrigade.github.io/BRANCHNAME/
-
-For a basic example of its usage, if GitHub user **@lolname** has made changes to the projects page on their fork (on the `master` branch), they can preview their changes using Jekit by going to:
-
-https://jekit.codeforamerica.org/lolname/sfbrigade.github.io/master/projects
 
 ### Submitting a Pull Request
 
 1. Fork the project.
+2. Remove CNAME
 2. Create a topic branch.
 3. Implement your feature or bug fix.
 4. Commit and push your changes.
