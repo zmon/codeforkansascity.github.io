@@ -11,6 +11,7 @@ The website for the Code for Kansas City Brigade
 
 ### Tech
 
+
 Built using [Jekyll](http://jekyllrb.com/), [Bootstrap](http://getbootstrap.com/), and Google Sheets
 
 ## Contributing
